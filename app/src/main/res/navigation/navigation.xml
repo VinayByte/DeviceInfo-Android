@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.egnize.deviceinfo.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_deviceInfoFragment3"
+            app:destination="@id/deviceInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_OSFragment"
+            app:destination="@id/OSFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sensorCategoryFragment"
+            app:destination="@id/sensorCategoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_CPUFragment"
+            app:destination="@id/CPUFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_networkFragment"
+            app:destination="@id/networkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceInfoFragment"
+        android:name="com.egnize.deviceinfo.fragments.DeviceInfoFragment"
+        android:label="fragment_device_info"
+        tools:layout="@layout/fragment_device_info" />
+    <fragment
+        android:id="@+id/OSFragment"
+        android:name="com.egnize.deviceinfo.fragments.OSFragment"
+        android:label="fragment_o"
+        tools:layout="@layout/fragment_o" />
+    <fragment
+        android:id="@+id/sensorCategoryFragment"
+        android:name="com.egnize.deviceinfo.fragments.SensorCategoryFragment"
+        android:label="fragment_sensor_category"
+        tools:layout="@layout/fragment_sensor_category" />
+    <fragment
+        android:id="@+id/CPUFragment"
+        android:name="com.egnize.deviceinfo.fragments.CPUFragment"
+        android:label="fragment_cpu"
+        tools:layout="@layout/fragment_cpu" />
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.egnize.deviceinfo.fragments.BatteryFragment"
+        android:label="fragment_battery"
+        tools:layout="@layout/fragment_battery" />
+    <fragment
+        android:id="@+id/networkFragment"
+        android:name="com.egnize.deviceinfo.fragments.NetworkFragment"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.egnize.deviceinfo.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.egnize.deviceinfo.fragments.StorageFragment"
+        android:label="fragment_storage"
+        tools:layout="@layout/fragment_storage" />
+    <fragment
+        android:id="@+id/blueToothFragment"
+        android:name="com.egnize.deviceinfo.fragments.BlueToothFragment"
+        android:label="fragment_blue_tooth"
+        tools:layout="@layout/fragment_blue_tooth" />
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.egnize.deviceinfo.fragments.DisplayFragment"
+        android:label="fragment_display"
+        tools:layout="@layout/fragment_display" />
+    <fragment
+        android:id="@+id/phoneFeaturesFragment"
+        android:name="com.egnize.deviceinfo.fragments.PhoneFeaturesFragment"
+        android:label="fragment_phone_features"
+        tools:layout="@layout/fragment_phone_features" />
+    <fragment
+        android:id="@+id/userAppsFragment"
+        android:name="com.egnize.deviceinfo.fragments.UserAppsFragment"
+        android:label="fragment_user_apps"
+        tools:layout="@layout/fragment_user_apps" />
+    <fragment
+        android:id="@+id/systemAppsFragment"
+        android:name="com.egnize.deviceinfo.fragments.SystemAppsFragment"
+        android:label="fragment_system_apps"
+        tools:layout="@layout/fragment_system_apps" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.egnize.deviceinfo.fragments.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>
